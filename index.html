@@ -3,150 +3,135 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio de Ariel Souza</title>
+  <title>Ariel Souza – Portfólio</title>
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #111;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #1f1f1f;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5em;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.2em;
-      color: #aaa;
-      margin-top: 10px;
-    }
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #ddd;
-    }
-    main h2 {
-      font-size: 2em;
-      margin-bottom: 10px;
-      color: #f0a500;
-      text-align: center;
-    }
-    main p {
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    .art-header {
-      text-align: center;
-      margin: 40px 0 20px;
-      color: #ccc;
-      font-style: italic;
-    }
-    .container {
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #000; color: #eee; line-height: 1.6; }
+    header, section { padding: 80px 20px; max-width: 1000px; margin: auto; }
+
+    /* Hero */
+    .hero { text-align: center; padding-top: 120px; }
+    .hero h1 { font-size: 3em; color: #b84dff; }
+    .hero p { font-size: 1.2em; color: #aaa; margin-top: 10px; }
+
+    h2 { color: #b84dff; font-size: 2em; margin-bottom: 20px; }
+    p { color: #ccc; margin-bottom: 15px; }
+
+    .services, .about { margin-top: 60px; }
+    
+    /* Projetos */
+    .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      padding-bottom: 40px;
-      max-width: 1200px;
-      margin: auto;
+      gap: 30px;
+      margin-top: 40px;
     }
-    .card {
-      background-color: #222;
+    .project-card {
+      background: #111;
+      border: 1px solid #444;
       border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
       transition: transform 0.3s;
     }
-    .card:hover {
+    .project-card:hover {
       transform: scale(1.03);
     }
-    .card img {
+    .project-card img {
       width: 100%;
       display: block;
     }
-    .card-title {
-      padding: 15px;
+    .project-card h3 {
+      background: #1a001a;
+      color: #66ccff;
+      text-align: center;
+      padding: 12px;
       font-size: 1.1em;
-      text-align: center;
-      background-color: #1a1a1a;
     }
-    .cta {
+
+    /* Contato */
+    .contact {
       text-align: center;
-      margin: 30px 0;
+      margin-top: 40px;
     }
-    .cta a {
-      background-color: #25D366;
+    .contact a {
+      background: #4a00e0;
       color: #fff;
       padding: 15px 30px;
-      text-decoration: none;
+      border-radius: 30px;
       font-size: 1.2em;
-      border-radius: 50px;
-      font-weight: bold;
-      box-shadow: 0 5px 10px rgba(37, 211, 102, 0.5);
-      transition: background-color 0.3s;
-      display: inline-block;
+      text-decoration: none;
+      box-shadow: 0 6px 12px rgba(74,0,224,0.5);
+      transition: background 0.3s;
     }
-    .cta a:hover {
-      background-color: #1ebe57;
+    .contact a:hover {
+      background: #3700b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9em;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <header>
+
+  <section class="hero">
     <h1>Ariel Souza</h1>
-    <p>Designer gráfico com 3 anos de experiência — criando artes que marcam presença!</p>
-  </header>
+    <p>Designer gráfico com 3 anos de experiência criando artes que marcam presença.</p>
+  </section>
 
-  <main>
-    <section class="about-me">
-      <h2>Sobre mim</h2>
-      <p>Sou um designer gráfico apaixonado por transformar ideias em imagens impactantes. Com foco em projetos para esportes, marcas e mídias sociais, meu objetivo é entregar qualidade e criatividade em cada trabalho.</p>
-      <p>Tenho experiência em ferramentas como Adobe Photoshop, Illustrator e Figma, sempre buscando me atualizar nas tendências do design digital e impresso.</p>
-      <p>Se deseja dar vida ao seu projeto com um design profissional e personalizado, vamos conversar!</p>
-    </section>
+  <section class="about">
+    <h2>Sobre mim</h2>
+    <p>Sou um designer gráfico apaixonado por transformar ideias em peças visuais impactantes. Trabalho principalmente com projetos voltados ao universo esportivo e mídias sociais, criando artes que conectam emoção e estilo.</p>
+    <p>Tenho domínio em Adobe Photoshop, Illustrator e Figma. Me atualizo constantemente nas tendências visuais para entregar sempre o melhor resultado.</p>
+    <p>Trabalho com responsabilidade, criatividade e atenção aos detalhes para destacar a identidade de cada cliente.</p>
+  </section>
 
-    <section class="cta">
-      <a href="https://wa.me/5519998607171" target="_blank" rel="noopener">
-        Me Chame no WhatsApp
-      </a>
-    </section>
+  <section class="services">
+    <h2>Serviços</h2>
+    <p>✔ Criação de artes para redes sociais</p>
+    <p>✔ Posts esportivos (clubes, jogadores, torcedores)</p>
+    <p>✔ Identidade visual personalizada</p>
+    <p>✔ Flyers, banners, thumbnails</p>
+  </section>
 
-    <section class="artworks">
-      <div class="art-header">
-        <strong>Algumas artes que já fiz</strong><br />
-        <small>(todas as imagens são protegidas por direitos autorais)</small>
+  <section class="projects">
+    <h2>Projetos</h2>
+    <p style="font-style: italic; color: #888;">(todas as imagens são protegidas por direitos autorais)</p>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="arte-ney-selecao.jpg" alt="Neymar Seleção">
+        <h3>Neymar – Seleção Brasileira</h3>
       </div>
-
-      <div class="container">
-        <div class="card">
-          <img src="arte-ney-selecao.jpg" alt="Arte Neymar Seleção" />
-          <div class="card-title">Neymar - Seleção Brasileira</div>
-        </div>
-        <div class="card">
-          <img src="arte-messi.jpg" alt="Arte Messi Inter Miami" />
-          <div class="card-title">Messi - Inter Miami</div>
-        </div>
-        <div class="card">
-          <img src="arte-ney-psg.jpg" alt="Arte Neymar PSG" />
-          <div class="card-title">Neymar - PSG</div>
-        </div>
-        <div class="card">
-          <img src="arte-rios.jpg" alt="Arte Palmeiras Ríos" />
-          <div class="card-title">Ríos - Palmeiras</div>
-        </div>
-        <div class="card">
-          <img src="arte-vini.jpg" alt="Arte Viní Jr Real Madrid" />
-          <div class="card-title">Vinícius Jr - Real Madrid</div>
-        </div>
+      <div class="project-card">
+        <img src="arte-messi.jpg" alt="Messi Inter Miami">
+        <h3>Messi – Inter Miami</h3>
       </div>
-    </section>
-  </main>
+      <div class="project-card">
+        <img src="arte-ney-psg.jpg" alt="Neymar PSG">
+        <h3>Neymar – PSG</h3>
+      </div>
+      <div class="project-card">
+        <img src="arte-rios.jpg" alt="Ríos Palmeiras">
+        <h3>Ríos – Palmeiras</h3>
+      </div>
+      <div class="project-card">
+        <img src="arte-vini.jpg" alt="Vinícius Jr Real Madrid">
+        <h3>Vinícius Jr – Real Madrid</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contato</h2>
+    <a href="https://wa.me/5519998607171" target="_blank">Me chame no WhatsApp</a>
+  </section>
+
+  <footer>
+    © 2025 Ariel Souza — Todos os direitos reservados.
+  </footer>
+
 </body>
 </html>
