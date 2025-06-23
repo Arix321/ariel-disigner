@@ -26,11 +26,34 @@
       color: #aaa;
       margin-top: 10px;
     }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #ddd;
+    }
+    main h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #f0a500;
+      text-align: center;
+    }
+    main p {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .art-header {
+      text-align: center;
+      margin: 40px 0 20px;
+      color: #ccc;
+      font-style: italic;
+    }
     .container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
-      padding: 30px;
+      padding-bottom: 40px;
       max-width: 1200px;
       margin: auto;
     }
@@ -61,27 +84,44 @@
     <h1>Ariel Souza</h1>
     <p>Designer gráfico com 3 anos de experiência — criando artes que marcam presença!</p>
   </header>
-  <div class="container">
-    <div class="card">
-      <img src="arte-ney-selecao.jpg" alt="Arte Neymar Seleção">
-      <div class="card-title">Neymar - Seleção Brasileira</div>
-    </div>
-    <div class="card">
-      <img src="arte-messi.jpg" alt="Arte Messi Inter Miami">
-      <div class="card-title">Messi - Inter Miami</div>
-    </div>
-    <div class="card">
-      <img src="arte-ney-psg.jpg" alt="Arte Neymar PSG">
-      <div class="card-title">Neymar - PSG</div>
-    </div>
-    <div class="card">
-      <img src="arte-rios.jpg" alt="Arte Palmeiras Ríos">
-      <div class="card-title">Ríos - Palmeiras</div>
-    </div>
-    <div class="card">
-      <img src="arte-vini.jpg" alt="Arte Viní Jr Real Madrid">
-      <div class="card-title">Vinícius Jr - Real Madrid</div>
-    </div>
-  </div>
+
+  <main>
+    <section class="about-me">
+      <h2>Sobre mim</h2>
+      <p>Sou um designer gráfico apaixonado por transformar ideias em imagens impactantes. Com foco em projetos para esportes, marcas e mídias sociais, meu objetivo é entregar qualidade e criatividade em cada trabalho.</p>
+      <p>Tenho experiência em ferramentas como Adobe Photoshop, Illustrator e Figma, sempre buscando me atualizar nas tendências do design digital e impresso.</p>
+      <p>Se deseja dar vida ao seu projeto com um design profissional e personalizado, vamos conversar!</p>
+    </section>
+
+    <section class="artworks">
+      <div class="art-header">
+        <strong>Algumas artes que já fiz</strong><br />
+        <small>(todas as imagens são protegidas por direitos autorais)</small>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <img src="arte-ney-selecao.jpg" alt="Arte Neymar Seleção" />
+          <div class="card-title">Neymar - Seleção Brasileira</div>
+        </div>
+        <div class="card">
+          <img src="arte-messi.jpg" alt="Arte Messi Inter Miami" />
+          <div class="card-title">Messi - Inter Miami</div>
+        </div>
+        <div class="card">
+          <img src="arte-ney-psg.jpg" alt="Arte Neymar PSG" />
+          <div class="card-title">Neymar - PSG</div>
+        </div>
+        <div class="card">
+          <img src="arte-rios.jpg" alt="Arte Palmeiras Ríos" />
+          <div class="card-title">Ríos - Palmeiras</div>
+        </div>
+        <div class="card">
+          <img src="arte-vini.jpg" alt="Arte Viní Jr Real Madrid" />
+          <div class="card-title">Vinícius Jr - Real Madrid</div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
