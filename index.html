@@ -11,7 +11,26 @@
 
     /* Hero */
     .hero { text-align: center; padding-top: 120px; }
-    .hero h1 { font-size: 3em; color: #b84dff; }
+    
+    /* Novo container flex para imagem + título */
+    .hero-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+    .hero-header img {
+      width: 60px; /* ajuste o tamanho conforme desejar */
+      height: 60px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+    .hero h1 {
+      font-size: 3em;
+      color: #b84dff;
+      margin: 0;
+    }
     .hero p { font-size: 1.2em; color: #aaa; margin-top: 10px; }
 
     h2 { color: #b84dff; font-size: 2em; margin-bottom: 20px; }
@@ -78,7 +97,10 @@
 <body>
 
   <section class="hero">
-    <h1>Ariel Souza</h1>
+    <div class="hero-header">
+      <img src="https://chatgpt.com/s/m_6859e8fc4a20819197cce4d90d8c3bbd" alt="Logo" />
+      <h1>Ariel Souza</h1>
+    </div>
     <p>Designer gráfico com 3 anos de experiência criando artes que marcam presença.</p>
   </section>
 
